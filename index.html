@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Bài Tập buổi 15</title>
+</head>
+
+<body>
+    <div>
+        <div class="baiSapXep m-auto row">
+            <div class="form-group col-6 bg-light p-3 row">
+                <h4 class="col-12 mb-3">Bài 1: Quản lí tuyển sinh</h4>
+                <br>
+                <div class="form-group col-4">
+                    <input id="number1" class="form-control w-100" placeholder="Điểm Chuẩn">
+                </div>
+                <div class="form-group col-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option id="chonKV1" value="0">Chọn Khu Vực</option>
+                        <option id="chonKV2" value="1">A</option>
+                        <option id="chonKV3" value="2">B</option>
+                        <option id="chonKV4" value="3">C</option>
+                    </select>
+                </div>
+                <div class="form-group col-4">
+                    <select class="form-control" id="exampleFormControlSelect12">
+                        <option id="chonDT1" value="0">Chọn Đối Tượng</option>
+                        <option id="chonDT2" value="1">1</option>
+                        <option id="chonDT3" value="2">2</option>
+                        <option id="chonDT4" value="3">3</option>
+                    </select>
+                </div>
+                <div class="form-group col-4">
+                    <input id="number4" class="form-control w-100" placeholder="Điểm môn thứ 1">
+                </div>
+                <div class="form-group col-4">
+                    <input id="number5" class="form-control w-100" placeholder="Điểm môn thứ 2">
+                </div>
+                <div class="form-group col-4">
+                    <input id="number6" class="form-control w-100" placeholder="Điểm môn thứ 3">
+                </div>
+                <button onclick="ketQuaTinh()" id="btnTinhDiem" class="btn btn-success ml-3">Kết Quả</button>
+                
+                <div id="ketQuaTraVe0" class="mt-2 alert alert-success col-12 ml-3">
+                    Kết quả :
+                    <span id="ketQuaTraVe0"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group col-6 bg-light p-3">
+                <h4 class="mb-3">Bài 2: Tính tiền điện</h4>
+                <div class="form-group">
+                    <input id="number4" class="form-control w-25" placeholder="Nhập họ tên">
+                </div>
+                <div class="form-group">
+                    <input id="number5" class="form-control w-25" placeholder="Nhập số KW">
+                </div>
+                <button onclick="tinhTienDien()" id="btnTinhTienDien" class="btn btn-success">Tính Tiền Điện</button>
+                <div class="mt-2 alert alert-success">
+                    Kết quả :
+                    <span id="ketQuaDemSo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
